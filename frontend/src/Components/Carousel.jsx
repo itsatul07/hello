@@ -85,7 +85,7 @@ export default function Carousel() {
         onClick={nextImage}
         disabled={isButtonDisabled} // Prevents rapid clicks
       >
-        <MdNavigateNext size={30} />
+        <MdNavigateNext   size={30} />
       </button>
 
       {/* Text Overlay */}
