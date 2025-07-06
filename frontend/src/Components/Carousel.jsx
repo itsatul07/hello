@@ -78,7 +78,7 @@ export default function Carousel() {
         onClick={prevImage}
         disabled={isButtonDisabled} // Prevents rapid clicks
       >
-        <MdNavigateBefore size={30} />
+        <MdNavigateBefore  size={30} />
       </button>
       <button
         className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 z-40 disabled:opacity-50"
