@@ -2,9 +2,8 @@ import { useState, useEffect } from "react";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
 const images = [
-  "/Carousel/1-compressed.jpeg",
-  "/Carousel/2-compressed.jpeg",
-  "/Carousel/3-compressed.jpeg",
+  "https://images.pexels.com/photos/2253879/pexels-photo-2253879.jpeg",
+  "https://images.pexels.com/photos/61129/pexels-photo-61129.jpeg",
   "/Carousel/4-compressed.jpeg"
 ];
 
@@ -56,7 +55,7 @@ export default function Carousel() {
   }, [currentIndex, autoPlay]);
 
   return (
-    <div className="relative w-full h-[400px] overflow-hidden mt-0 mb-0">
+    <div className="relative w-full h-[600px] overflow-hidden mt-20 mb-0">
       {/* Image Slider with Smooth Transitions */}
       <div
         className={`flex transition-transform duration-1000 ease-in-out ${transitionEnabled ? "" : "duration-0"}`}
@@ -67,7 +66,7 @@ export default function Carousel() {
             key={index}
             src={image}
             alt={`Slide ${index + 1}`}
-            className="w-full h-[400px] object-cover flex-shrink-0 transition-opacity duration-1000"
+            className="w-full h-[600px] object-cover flex-shrink-0 transition-opacity duration-1000"
             loading="lazy"
           />
         ))}

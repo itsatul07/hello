@@ -45,16 +45,18 @@ export default function Navbar() {
             : "bg-[#0D1321] text-gray-200"
         }`}
       >
-        <div className="max-w-full mx-auto flex gap-0 justify-between items-center">
-          <h1 className="text-3xl text-left font-bold">
-            🏡 Green Valley Society
-          </h1>
-          <button
+        
+        <div className="max-w-full mx-auto flex gap-0  items-center">
+        <button
             className="text-3xl focus:outline-none z-50"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
           </button>
+          <h1 className="text-3xl font-bold">
+            🏡 Green Valley Society
+          </h1>
+        
         </div>
       </div>
 

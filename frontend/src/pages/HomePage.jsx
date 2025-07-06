@@ -10,12 +10,12 @@ const FeatureCard = ({ to, bgColorLight, bgColorDark, imgSrc, title, description
     className={`flex flex-col bg-[#F8FAFC] items-center p-6 rounded-lg shadow-md   hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out
       ${darkMode ? bgColorDark : bgColorLight} w-full sm:w-4/5 md:w-full`}
   >
-    <div className="w-full h-48 bg-gray-300 rounded-lg overflow-hidden">
+    <div className="w-full h-48 bg-gray-300 dark:text-gray-800 rounded-lg overflow-hidden">
       <img src={imgSrc} alt={title} className="w-full h-full object-cover" />
     </div>
     <div className="text-center mt-4">
-      <h2 className={`text-xl font-semibold ${darkMode ? "text-white" : "text-gray-900"}`}>{title}</h2>
-      <p className={`${darkMode ? "text-gray-400" : "text-gray-700"}`}>{description}</p>
+      <h2 className={`text-xl font-semibold ${darkMode ? "text-gray-800" : "text-gray-900"}`}>{title}</h2>
+      <p className={`${darkMode ? "text-gray-900" : "text-gray-700"}`}>{description}</p>
     </div>
   </Link>
 );
@@ -56,7 +56,7 @@ export default function HomePage() {
           onClick={() => setDarkMode(!darkMode)}
           className="p-3 rounded-full bg-gray-200 dark:bg-gray-800 shadow-md hover:scale-110 transition"
         >
-          {darkMode ? <Sun size={24} className="text-yellow-400" /> : <Moon size={24} className="text-gray-700" />}
+          {darkMode ? <Sun size={24} className="text-yellow-400" /> : <Moon size={24} className="text-gray-100" />}
         </button>
       </div>
       
@@ -64,7 +64,7 @@ export default function HomePage() {
       <div
         id="homepage-content"
         className={`p-6 transition-opacity duration-700 ${contentVisible ? "opacity-100" : "opacity-0"} ${
-          darkMode ? "bg-gray-950 text-gray-300" : "bg-my-forest"
+          darkMode ? "bg-gray-950 text-gray-300" : "bg-background: linear-gradient(to bottom, #0f172a, #1e293b, #334155); text-black"
         }`}
       >
         <div className="grid grid-cols-1 background: linear-gradient(to bottom, #0f172a, #1e293b, #334155) sm:grid-cols-2 lg:grid-cols-3 gap-10  px-4 sm:px-8">
@@ -72,7 +72,7 @@ export default function HomePage() {
             to="/events"
             // bgColorLight="bg-blue-100 hover:bg-blue-200"
             // bgColorDark="bg-blue-800 hover:bg-blue-700"
-            imgSrc="/path-to-your-image.jpg"
+            imgSrc="https://images.pexels.com/photos/8819459/pexels-photo-8819459.jpeg"
             title="🎉 Events & Festivals"
             description="Check out upcoming and past events in our society."
             darkMode={darkMode}
@@ -81,7 +81,7 @@ export default function HomePage() {
             to="/shops"
             // bgColorLight="bg-green-100 hover:bg-green-200"
             // bgColorDark="bg-green-800 hover:bg-green-700"
-            imgSrc="/path-to-your-shop-image.jpg"
+            imgSrc="https://images.pexels.com/photos/3962285/pexels-photo-3962285.jpeg"
             title="🛍️ Shops & Services"
             description="See which shops are open today."
             darkMode={darkMode}
@@ -90,7 +90,7 @@ export default function HomePage() {
             to="/rent-flats"
             // bgColorLight="bg-yellow-100 hover:bg-yellow-200"
             // bgColorDark="bg-yellow-800 hover:bg-yellow-700"
-            imgSrc="/path-to-your-flats-image.jpg"
+            imgSrc="https://images.pexels.com/photos/6238614/pexels-photo-6238614.jpeg"
             title="🏠 Rent Flats"
             description="Find available apartments for rent."
             darkMode={darkMode}
@@ -99,7 +99,7 @@ export default function HomePage() {
             to="/buy-and-sell"
             // bgColorLight="bg-purple-100 hover:bg-purple-200"
             // bgColorDark="bg-purple-800 hover:bg-purple-700"
-            imgSrc="/path-to-your-new-section-image.jpg"
+            imgSrc="https://images.pexels.com/photos/6613915/pexels-photo-6613915.jpeg"
             title="📌 Buy And Sell Items"
             description="Buy and Sell anything you want."
             darkMode={darkMode}
@@ -108,14 +108,14 @@ export default function HomePage() {
             to="/lost-and-found"
             // bgColorLight="bg-rose-200 hover:bg-rose-300"
             // bgColorDark="bg-rose-800 hover:bg-rose-700"
-            imgSrc="/path-to-your-new-section-image.jpg"
+            imgSrc="https://dxan6czxprkid.cloudfront.net/images/_1200x630_crop_center-center_82_none/broadway-lostandfound.jpg?mtime=1653420756"
             title="🔍 Lost And Found"
             description="Find your lost items here."
             darkMode={darkMode}
           />
           <FeatureCard
             to="/volunteer"
-            imgSrc="/path-to-volunteer-image.jpg"
+            imgSrc="https://images.pexels.com/photos/6646778/pexels-photo-6646778.jpeg"
             title="🤝 Volunteer With Us"
             description="Join our community efforts and make a difference."
             darkMode={darkMode}
