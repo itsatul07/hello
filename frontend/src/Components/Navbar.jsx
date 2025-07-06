@@ -85,7 +85,7 @@ export default function Navbar() {
             </Link>
             <Link
               to="/home"
-              className="hover:text-gray-500"
+              className="hover:text-gray-400"
               onClick={() => setMenuOpen(false)}
             >
               Home
