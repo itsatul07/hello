@@ -90,7 +90,7 @@ export default function Carousel() {
 
       {/* Text Overlay */}
       <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-        <h1 className="text-white text-3xl md:text-5xl font-bold">
+        <h1 className="text-olive text-3xl md:text-5xl font-bold">
           Green Valley Society
         </h1>
       </div>
