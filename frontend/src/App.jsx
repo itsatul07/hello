@@ -23,6 +23,7 @@ import Profile from "./pages/Profile";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import EmergencyButton from "./Components/EmergencyButton";
+import ThemeToggle from "./Components/Darkmode";
 
 function AppContent() {
   const location = useLocation();
@@ -36,6 +37,7 @@ function AppContent() {
     <>
       {/* Conditionally show navbar */}
       {showNavbar && <Navbar />}
+      {<ThemeToggle/>}
 
       {/* Main Content */}
       <div className="min-h-screen bg-gray-100 text-gray-900">
