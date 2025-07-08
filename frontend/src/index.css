@@ -9,4 +9,17 @@ body {
           --color-forest: #588157 ;
           --color-moss: #3A5A40 ;
           --color-jungle: #344E41 ;
+          --bg-color: var(--color-sage);
+  --text-color: var(--color-jungle);
+  --accent-color: var(--color-forest);
+  --button-bg: var(--color-olive);
+  --button-text: #ffffff;
+}
+/* Dark Mode */
+[data-theme="dark"] {
+  --bg-color: var(--color-jungle);
+  --text-color: var(--color-sage);
+  --accent-color: var(--color-moss);
+  --button-bg: var(--color-forest);
+  --button-text: #ffffff;
 }

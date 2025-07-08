@@ -39,10 +39,10 @@ export default function Navbar() {
     <div className="w-full">
       {/* Navbar */}
       <div
-        className={`fixed top-0 left-0 w-full shadow-lg backdrop-blur-lg z-50 p-6 ${
+        className={`fixed top-0 left-0 w-full  z-50 p-6 ${
           isHomePage
-            ? "bg-[#10172A]/10 text-white"
-            : "bg-[#0D1321] text-gray-200"
+            ? "bg-olive text-sage"
+            : "bg-sage text-olive"
         }`}
       >
         
