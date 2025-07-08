@@ -31,7 +31,7 @@ export default function HomePage() {
         id="homepage-content"
         className={`p-6 transition-opacity duration-700 ${
           contentVisible ? "opacity-100" : "opacity-0"
-        } bg-[var(--bg-color)] text-[var(--text-color)]`}
+        } bg-[var(--bg-color)] text-[var(--accent-color)]`}
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 sm:px-8">
           <FeatureCard
@@ -46,7 +46,7 @@ export default function HomePage() {
             title="🛍️ Shops & Services"
             description="See which shops are open today."
           />
-          
+
           <FeatureCard
             to="/rent-flats"
             imgSrc="https://images.pexels.com/photos/6238614/pexels-photo-6238614.jpeg"

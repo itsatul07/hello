@@ -41,7 +41,7 @@ export default function Navbar() {
       <div
         className={`fixed top-0 left-0 w-full  z-50 p-6 ${
           isHomePage
-            ? "bg-olive text-sage"
+            ? "bg-olive text-[var(--accent-color)]"
             : "bg-sage text-olive"
         }`}
       >
